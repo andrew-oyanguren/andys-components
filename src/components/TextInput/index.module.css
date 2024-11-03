@@ -1,0 +1,14 @@
+.textInput {
+  border: none;
+  border-radius: 6px;
+  outline: 1px solid #ccc;
+  padding: 10px;
+}
+
+.textInput:focus {
+  outline: 1px solid cadetblue;
+}
+
+.error {
+  outline: 1px solid rgb(255, 48, 48);
+}

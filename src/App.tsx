@@ -2,6 +2,7 @@ import Card from './components/Card';
 import Button from './components/Button';
 import Loader from './components/Loader';
 import SelectableCard from './components/SelectableCard';
+import TextInput from './components/TextInput';
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <SelectableCard flexCenter>
         <h1>Selectable Card</h1>
       </SelectableCard>
+
+      <p style={{marginTop: 20}}>Text Input</p>
+      <TextInput hasError={false} placeholder='name'/>
     </div>
   );
 }
