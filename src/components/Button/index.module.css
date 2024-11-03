@@ -1,0 +1,25 @@
+.button {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid cadetblue;
+}
+
+.primary {
+  background-color: cadetblue;
+  color: white;
+}
+
+.secondary {
+  background-color: white;
+  color: cadetblue;
+}
+
+.button:hover {
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.15);
+}
+
+.button:active {
+  transform: scale(0.99);
+}
