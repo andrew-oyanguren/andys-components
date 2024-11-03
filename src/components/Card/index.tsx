@@ -2,9 +2,17 @@ import { ReactNode } from 'react';
 
 import styles from './index.module.css';
 
-export default function Card({ children } : { children: ReactNode }) {
+type CardProps = {
+  children: ReactNode;
+  flexCenter?: boolean;
+};;
+
+export default function Card({ children, flexCenter } : CardProps) {
+
+  const cardClassNames = `${styles.card} ${flexCenter ? styles.flexCenter : ''}`;
+
   return (
-    <div className={styles.card}>
+    <div className={cardClassNames}>
       {children}
     </div>
   )
