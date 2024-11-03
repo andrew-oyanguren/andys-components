@@ -9,8 +9,10 @@ function App() {
       <Card>
         <h1>Mastering React</h1>
       </Card>
+
       <p style={{marginTop: 20}}>Button</p>
       <Button title="Click me" onClick={() => console.log('Button clicked')} />
+        
       <p style={{marginTop: 20}}>Loader</p>
       <Loader />
     </div>
