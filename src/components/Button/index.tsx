@@ -9,9 +9,9 @@ type ButtonProps = {
 
 export default function Button({ title, onClick, secondary, style }: ButtonProps) { 
 
-  const buttonStyles = `${styles.button} ${secondary ? styles.secondary : styles.primary}`;
+  const buttonClassNames = `${styles.button} ${secondary ? styles.secondary : styles.primary}`;
 
   return (
-    <button style={style} className={buttonStyles} onClick={onClick}>{title}</button>
+    <button style={style} className={buttonClassNames} onClick={onClick}>{title}</button>
   );
 };
