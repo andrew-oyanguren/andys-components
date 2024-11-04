@@ -4,7 +4,12 @@ import Loader from './components/Loader';
 import SelectableCard from './components/SelectableCard';
 import TextInput from './components/TextInput';
 
+import useInput from './hooks/useInput';
+
 function App() {
+
+  const {hasError, onChange} = useInput((value) => value === 'andy');
+
   return (
     <div className="App">
       <p style={{marginTop: 20}}>Card</p>
@@ -24,7 +29,7 @@ function App() {
       </SelectableCard>
 
       <p style={{marginTop: 20}}>Text Input</p>
-      <TextInput hasError={false} placeholder='name'/>
+      <TextInput onChange={onChange} hasError={hasError} placeholder='name'/>
     </div>
   );
 }
